@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Обувь
+{% endblock %}
+
+{% block content %}
+{% for shoe in shoes_list %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="https://www.shoes.ru/images/all/ware_new/133301.jpg">
+                        <img class="pic-2" src="https://www.shoes.ru/images/all/ware_new/133301.jpg">
+                    </a>
+                    <span class="product-trend-label">Trend</span>
+                    <ul class="social">
+                        <li><a href="#" data-tip="Add to Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li><a href="#" data-tip="Wishlist"><i class="far fa-heart"></i></a></li>
+                        <li><a href="#" data-tip="Compare"><i class="fas fa-random"></i></a></li>
+                        <li><a href="#" data-tip="Quick View"><i class="fas fa-search"></i></a></li>
+                    </ul>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                    <div class="price">$21.00</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="https://www.shoes.ru/images/all/ware_new/133265.jpg">
+                        <img class="pic-2" src="https://www.shoes.ru/images/all/ware_new/133265.jpg">
+                    </a>
+                    <span class="product-trend-label">Trend</span>
+                    <span class="product-discount-label">-20%</span>
+                    <ul class="social">
+                        <li><a href="#" data-tip="Add to Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li><a href="#" data-tip="Wishlist"><i class="far fa-heart"></i></a></li>
+                        <li><a href="#" data-tip="Compare"><i class="fas fa-random"></i></a></li>
+                        <li><a href="#" data-tip="Quick View"><i class="fas fa-search"></i></a></li>
+                    </ul>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Women's Button Top</a></h3>
+                    <div class="price discount"><span>$17.00</span> $13.60</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%endfor%}
+{% endblock %}
